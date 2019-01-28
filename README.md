@@ -15,3 +15,12 @@ arn:aws:rds:eu-west-1:123456789012:db:mysql-db
 
 <!-- Object in an Amazon S3 bucket -->
 arn:aws:s3:::my_corporate_bucket/exampleobject.png
+
+
+{
+  "Version": "2012-10-17",
+  "Statement": {
+    "Effect": "Allow",
+    "Action": ["s3:GetObject"],
+    "Resource": "arn:aws:s3:::Hello-bucket/*"
+}
